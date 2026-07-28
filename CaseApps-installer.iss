@@ -35,7 +35,7 @@ SetupIconFile=assets\logo.ico
 WizardImageFile=assets\banner.bmp
 Compression=lzma
 SolidCompression=yes
-ArchitecturesInstallIn64BitMode=x64compatible
+;ArchitecturesInstallIn64BitMode=x64compatible
 ;info: http://revolution.screenstepslive.com/s/revolution/m/10695/l/95041-signing-installers-you-create-with-inno-setup
 ;comment/edit the line below if you are not signing the exe with the CASE pfx
 ;SignTool=signtoolcase
