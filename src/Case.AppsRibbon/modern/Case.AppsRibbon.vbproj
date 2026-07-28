@@ -10,4 +10,13 @@
     <OptionInfer>On</OptionInfer>
     <OptionCompare>Binary</OptionCompare>
   </PropertyGroup>
+
+  <!-- Ribbon loads icons via GetManifestResourceStream("Case.AppsRibbon.<file>.png") -->
+  <ItemGroup>
+    <None Remove="Icons\**\*.png" />
+    <EmbeddedResource Include="Icons\**\*.png">
+      <LogicalName>Case.AppsRibbon.%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>
+
