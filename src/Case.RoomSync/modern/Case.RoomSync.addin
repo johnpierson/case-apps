@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.RoomSync</Text>
+    <Assembly>Case.RoomSync.dll</Assembly>
+    <ClientId>6aA2A416-D21B-4A44-93E4-87635aa16622</ClientId>
+    <FullClassName>Case.RoomSync.Entry.CmdMain</FullClassName>
+    <VendorId>CASE</VendorId>
+    <VendorDescription>Case Design, inc. www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

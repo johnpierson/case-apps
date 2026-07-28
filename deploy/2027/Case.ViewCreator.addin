@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Create Views</Name>
+    <Assembly>Case.ViewCreator.dll</Assembly>
+    <ClientId>B33FFE72-25F2-4842-94C7-A98444DDAC4E</ClientId>
+    <FullClassName>Case.ViewCreator.app</FullClassName>
+    <VendorId>CSAJ</VendorId>
+    <VendorDescription>CASE Design Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application.Case.Subs.KeyMatcher</Name>
+    <Assembly>Case.Subs.KeyMatcher.dll</Assembly>
+    <FullClassName>Case.Subs.KeyMatcher.Entry.AppMain</FullClassName>
+    <ClientId>2e63ba74-0f5c-4fdf-8a92-fa7095e0401d</ClientId>
+    <VendorId>CASE</VendorId>
+  </AddIn>
+</RevitAddIns>

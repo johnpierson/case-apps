@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command - Case.FamilySubcategories</Text>
+    <Assembly>Case.FamilySubcategories.dll</Assembly>
+    <FullClassName>Case.FamilySubcategories.Entry.CmdMain</FullClassName>
+    <ClientId>76D68975-5D6D-4CA6-BF6F-32F6A6612C36</ClientId>
+    <VendorId>Case</VendorId>
+  </AddIn>
+</RevitAddIns>

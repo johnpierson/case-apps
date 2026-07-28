@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.Directionality</Text>
+    <Assembly>Case.Directionality.dll</Assembly>
+    <ClientId>4ea76ff3-bb47-4969-9371-c7f3eb8ac068</ClientId>
+    <FullClassName>Case.Directionality.Entry.CmdMain</FullClassName>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., http://apps.case-inc.com/</VendorDescription>
+  </AddIn>
+</RevitAddIns>

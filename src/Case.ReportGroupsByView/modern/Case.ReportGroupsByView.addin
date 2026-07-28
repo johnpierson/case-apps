@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command - Case.ReportGroupsByView</Text>
+    <Assembly>Case.ReportGroupsByView.dll</Assembly>
+    <FullClassName>Case.ReportGroupsByView.Entry.CmdMain</FullClassName>
+    <ClientId>ae638a74-0f8b-4fdf-8a94-fa7095e0401d</ClientId>
+    <VendorId>Case</VendorId>
+  </AddIn>
+</RevitAddIns>

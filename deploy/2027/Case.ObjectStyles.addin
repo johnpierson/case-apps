@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command - Case.ObjectStyles</Text>
+    <Assembly>Case.ObjectStyles.dll</Assembly>
+    <FullClassName>Case.ObjectStyles.Entry.CmdMain</FullClassName>
+    <ClientId>91AC564F-2E72-4767-94B8-621E5E6E40EE</ClientId>
+    <VendorId>Case</VendorId>
+  </AddIn>
+</RevitAddIns>

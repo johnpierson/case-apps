@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.LightingLayout</Text>
+    <Description>Case.LightingLayout</Description>
+    <Assembly>Case.LightingLayout.dll</Assembly>
+    <FullClassName>Case.LightingLayout.Entry.CmdMain</FullClassName>
+    <ClientId>ace9b525-945d-4a92-9f90-89cc61dcb4aa</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

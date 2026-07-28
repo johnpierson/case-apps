@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.ChangeLineStyles</Text>
+    <Assembly>Case.ChangeLineStyles.dll</Assembly>
+    <ClientId>12ea0b1a-e1bd-4aa5-9a71-f3baf44ab217</ClientId>
+    <FullClassName>Case.ChangeLineStyles.Entry.CmdMain</FullClassName>
+    <VendorId>CASE</VendorId>
+    <VendorDescription>http://www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

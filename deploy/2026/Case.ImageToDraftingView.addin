@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.ImageToDraftingView</Text>
+    <Assembly>Case.ImageToDraftingView.dll</Assembly>
+    <ClientId>20f78cc8-41d2-4d98-9d76-813f12324357</ClientId>
+    <FullClassName>Case.ImageToDraftingView.Entry.CmdMain</FullClassName>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

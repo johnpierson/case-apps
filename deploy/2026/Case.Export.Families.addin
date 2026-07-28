@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.Export.Families</Text>
+    <Assembly>Case.Export.Families.dll</Assembly>
+    <ClientId>92ea0b1a-e1bd-4645-9473-f3baf14abf27</ClientId>
+    <FullClassName>Case.Export.Families.Entry.CmdMain</FullClassName>
+    <VendorId>CASE</VendorId>
+    <VendorDescription>http://www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

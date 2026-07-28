@@ -1,18 +1,16 @@
 #define MyAppName "CASE Apps"
-#define MyAppVersion "23.2.23"
+#define MyAppVersion "27.1.0"
 #define MyAppPublisher "CASE"
 #define MyAppURL "https://github.com/rudderdon/case-apps"
 
 #define RevitAppName  "Case.Apps"
 #define RevitAddinFolder "{userappdata}\Autodesk\REVIT\Addins"
-#define RevitFolder20 RevitAddinFolder+"\2020\"+RevitAppName
-#define RevitAddin20  RevitAddinFolder+"\2020\"
-#define RevitFolder21 RevitAddinFolder+"\2021\"+RevitAppName
-#define RevitAddin21  RevitAddinFolder+"\2021\"
-#define RevitFolder22 RevitAddinFolder+"\2022\"+RevitAppName
-#define RevitAddin22  RevitAddinFolder+"\2022\"
-#define RevitFolder23 RevitAddinFolder+"\2023\"+RevitAppName
-#define RevitAddin23  RevitAddinFolder+"\2023\"
+#define RevitFolder25 RevitAddinFolder+"\2025\"+RevitAppName
+#define RevitAddin25  RevitAddinFolder+"\2025\"
+#define RevitFolder26 RevitAddinFolder+"\2026\"+RevitAppName
+#define RevitAddin26  RevitAddinFolder+"\2026\"
+#define RevitFolder27 RevitAddinFolder+"\2027\"+RevitAppName
+#define RevitAddin27  RevitAddinFolder+"\2027\"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -26,7 +24,7 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={pf}\{#MyAppName}
+DefaultDirName={autopf}\{#MyAppName}
 DisableDirPage=yes
 DefaultGroupName=CASE Design, Inc\{#MyAppName}
 DisableProgramGroupPage=yes
@@ -37,6 +35,7 @@ SetupIconFile=assets\logo.ico
 WizardImageFile=assets\banner.bmp
 Compression=lzma
 SolidCompression=yes
+ArchitecturesInstallIn64BitMode=x64compatible
 ;info: http://revolution.screenstepslive.com/s/revolution/m/10695/l/95041-signing-installers-you-create-with-inno-setup
 ;comment/edit the line below if you are not signing the exe with the CASE pfx
 ;SignTool=signtoolcase
@@ -45,30 +44,35 @@ SolidCompression=yes
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Components]
-Name: revit20; Description: CASE Apps for Autodesk Revit 2020;  Types: full
-Name: revit21; Description: CASE Apps for Autodesk Revit 2021;  Types: full
-Name: revit22; Description: CASE Apps for Autodesk Revit 2022;  Types: full
-Name: revit23; Description: CASE Apps for Autodesk Revit 2023;  Types: full
+Name: revit25; Description: CASE Apps for Autodesk Revit 2025 (.NET 8);  Types: full
+Name: revit26; Description: CASE Apps for Autodesk Revit 2026 (.NET 8);  Types: full
+Name: revit27; Description: CASE Apps for Autodesk Revit 2027 (.NET 10); Types: full
+
+[Types]
+Name: "full"; Description: "All supported Revit years (2025–2027)"
+Name: "custom"; Description: "Select Revit years"; Flags: iscustom
 
 [Files]
-;REVIT 2020 ~~~~~~~~~~~~~~~~~~~
-Source: "deploy\2020\*"; DestDir: "{#RevitFolder20}"; Excludes: "*.pdb,*.xml,*.config,*.addin,*.tmp"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: revit20
-Source: "deploy\{#RevitAppName}.addin"; DestDir: "{#RevitAddin20}"; Flags: ignoreversion; Components: revit20
+;REVIT 2025 ~~~~~~~~~~~~~~~~~~~
+Source: "deploy\2025\*"; DestDir: "{#RevitFolder25}"; Excludes: "*.pdb,*.xml,*.config,*.addin,*.tmp"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: revit25
+Source: "deploy\{#RevitAppName}.addin"; DestDir: "{#RevitAddin25}"; Flags: ignoreversion; Components: revit25
 
-;REVIT 2021 ~~~~~~~~~~~~~~~~~~~
-Source: "deploy\2021\*"; DestDir: "{#RevitFolder21}"; Excludes: "*.pdb,*.xml,*.config,*.addin,*.tmp"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: revit21
-Source: "deploy\{#RevitAppName}.addin"; DestDir: "{#RevitAddin21}"; Flags: ignoreversion; Components: revit21
+;REVIT 2026 ~~~~~~~~~~~~~~~~~~~
+Source: "deploy\2026\*"; DestDir: "{#RevitFolder26}"; Excludes: "*.pdb,*.xml,*.config,*.addin,*.tmp"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: revit26
+Source: "deploy\{#RevitAppName}.addin"; DestDir: "{#RevitAddin26}"; Flags: ignoreversion; Components: revit26
 
-;REVIT 2022 ~~~~~~~~~~~~~~~~~~~
-Source: "deploy\2022\*"; DestDir: "{#RevitFolder22}"; Excludes: "*.pdb,*.xml,*.config,*.addin,*.tmp"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: revit22
-Source: "deploy\{#RevitAppName}.addin"; DestDir: "{#RevitAddin22}"; Flags: ignoreversion; Components: revit22
-
-;REVIT 2023 ~~~~~~~~~~~~~~~~~~~
-Source: "deploy\2023\*"; DestDir: "{#RevitFolder23}"; Excludes: "*.pdb,*.xml,*.config,*.addin,*.tmp"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: revit23
-Source: "deploy\{#RevitAppName}.addin"; DestDir: "{#RevitAddin23}"; Flags: ignoreversion; Components: revit23
+;REVIT 2027 ~~~~~~~~~~~~~~~~~~~
+Source: "deploy\2027\*"; DestDir: "{#RevitFolder27}"; Excludes: "*.pdb,*.xml,*.config,*.addin,*.tmp"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: revit27
+Source: "deploy\{#RevitAppName}.addin"; DestDir: "{#RevitAddin27}"; Flags: ignoreversion; Components: revit27
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}"
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
+
+[Code]
+function InitializeSetup: Boolean;
+begin
+  Result := True;
+end;

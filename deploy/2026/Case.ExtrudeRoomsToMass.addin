@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.ExtrudeRoomsToMass</Text>
+    <Assembly>Case.ExtrudeRoomsToMass.dll</Assembly>
+    <ClientId>1ea393bb-ddba-449e-bc43-fd4120330241</ClientId>
+    <FullClassName>Case.ExtrudeRoomsToMass.Entry.CmdMain</FullClassName>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc. www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

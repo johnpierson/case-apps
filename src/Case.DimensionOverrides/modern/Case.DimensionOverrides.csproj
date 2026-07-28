@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsCaseAddin>true</IsCaseAddin>
+    <RootNamespace>Case.DimensionOverrides</RootNamespace>
+    <AssemblyName>Case.DimensionOverrides</AssemblyName>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+</Project>

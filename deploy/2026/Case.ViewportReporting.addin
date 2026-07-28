@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.ViewportReporting</Text>
+    <Assembly>Case.ViewportReporting.dll</Assembly>
+    <FullClassName>Case.ViewportReporting.Entry.CmdMain</FullClassName>
+    <ClientId>c73b4804-bd81-4973-810a-f30b7a4210eb</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc. www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

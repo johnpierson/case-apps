@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.BasicReporting</Text>
+    <Assembly>Case.BasicReporting.dll</Assembly>
+    <ClientId>48401C1A-333C-4154-B972-ACa72655D58B</ClientId>
+    <FullClassName>Case.BasicReporting.Entry.CmdMain</FullClassName>
+    <VendorId>CASE</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

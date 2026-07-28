@@ -1,0 +1,69 @@
+<Project>
+  <!--
+    CASE Apps — shared build settings for Revit 2025 / 2026 / 2027
+    Build:  dotnet build -p:RevitVersion=2025
+            dotnet build -p:RevitVersion=2026
+            dotnet build -p:RevitVersion=2027
+  -->
+  <PropertyGroup>
+    <RevitVersion Condition="'$(RevitVersion)' == ''">2026</RevitVersion>
+
+    <!-- TFMs: 2025–2026 = .NET 8; 2027 = .NET 10 -->
+    <TargetFramework Condition="'$(RevitVersion)' == '2025'">net8.0-windows</TargetFramework>
+    <TargetFramework Condition="'$(RevitVersion)' == '2026'">net8.0-windows</TargetFramework>
+    <TargetFramework Condition="'$(RevitVersion)' == '2027'">net10.0-windows</TargetFramework>
+    <TargetFramework Condition="'$(TargetFramework)' == ''">net8.0-windows</TargetFramework>
+
+    <PlatformTarget>x64</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+
+    <!-- Isolate intermediate/output per Revit year (2025 & 2026 share net8.0-windows).
+         Exclude ALL obj/bin trees so other years' generated AssemblyInfo files are not compiled. -->
+    <BaseIntermediateOutputPath>obj\R$(RevitVersion)\</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(BaseIntermediateOutputPath)</MSBuildProjectExtensionsPath>
+    <OutputPath>bin\R$(RevitVersion)\$(Configuration)\</OutputPath>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj\**;bin\**;**/AssemblyInfo.cs;**/AssemblyInfo.vb</DefaultItemExcludes>
+
+    <!-- C# uses ';', VB uses ',' for conditional compilation constants -->
+    <DefineConstants Condition="'$(MSBuildProjectExtension)' == '.csproj'">$(DefineConstants);REVIT$(RevitVersion);Revit$(RevitVersion)</DefineConstants>
+    <DefineConstants Condition="'$(MSBuildProjectExtension)' == '.vbproj'">REVIT$(RevitVersion),Revit$(RevitVersion)</DefineConstants>
+
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>true</GenerateTargetFrameworkAttribute>
+    <Deterministic>true</Deterministic>
+
+    <!-- WinForms analyzers (WFO1000+) are noisy on legacy designer code; keep as warnings -->
+    <NoWarn>$(NoWarn);WFO1000;WFO1001;WFO1002;WFO1003</NoWarn>
+    <_SkipUpgradeNetAnalyzersNuGetWarning>true</_SkipUpgradeNetAnalyzersNuGetWarning>
+
+    <!-- WinForms + WPF available; projects can still be forms-only -->
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+
+    <!-- Do not copy Revit API next to the add-in -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
+
+    <!-- Deploy root (repo/deploy/{year}) -->
+    <CaseDeployDir>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\deploy\$(RevitVersion)\'))</CaseDeployDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitVersion).*">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <GeneratePathProperty>true</GeneratePathProperty>
+    </PackageReference>
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <GeneratePathProperty>true</GeneratePathProperty>
+    </PackageReference>
+  </ItemGroup>
+</Project>
+

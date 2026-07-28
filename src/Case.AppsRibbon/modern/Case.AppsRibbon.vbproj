@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsCaseAddin>true</IsCaseAddin>
+    <RootNamespace>Case.AppsRibbon</RootNamespace>
+    <AssemblyName>Case.AppsRibbon</AssemblyName>
+    <OutputType>Library</OutputType>
+    <MyType>Windows</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+</Project>

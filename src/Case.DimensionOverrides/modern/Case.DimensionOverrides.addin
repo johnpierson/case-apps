@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command - Case.DimensionOverrides</Text>
+    <Assembly>Case.DimensionOverrides.dll</Assembly>
+    <FullClassName>Case.DimensionOverrides.Entry.CmdMain</FullClassName>
+    <ClientId>f0b1a893-be2d-4648-b9d5-00b755393267</ClientId>
+    <VendorId>Case</VendorId>
+  </AddIn>
+</RevitAddIns>

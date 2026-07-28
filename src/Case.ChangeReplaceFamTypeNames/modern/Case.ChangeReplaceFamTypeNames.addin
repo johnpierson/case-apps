@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.ChangeReplaceFamTypeNames</Text>
+    <Assembly>Case.ChangeReplaceFamTypeNames.dll</Assembly>
+    <FullClassName>Case.ChangeReplaceFamTypeNames.Entry.CmdMain</FullClassName>
+    <ClientId>fc3ed2c7-243e-448a-9dff-a88545492948</ClientId>
+    <VendorId>CASE</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

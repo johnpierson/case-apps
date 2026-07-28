@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.Subs.SuperTag</Text>
+    <Description>Case.Subs.SuperTag</Description>
+    <Assembly>Case.Subs.SuperTag.dll</Assembly>
+    <FullClassName>Case.Subs.SuperTag.Entry.A01A0A226EBE4CD89D655C55B997650F</FullClassName>
+    <ClientId>f6c53bc6-f4dd-47ec-bb7f-1e0e471ed75d</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc. www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

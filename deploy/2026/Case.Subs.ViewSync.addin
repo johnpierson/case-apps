@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Name>CASE.ViewSync - Config</Name>
+    <Assembly>Case.Subs.ViewSync.dll</Assembly>
+    <FullClassName>Case.Subs.ViewSync.Entry.D9B42C3FEA6F4F9E8E1B62E993AA2511</FullClassName>
+    <ClientId>48dda76e-9230-4479-bdc3-0eb1bb5ed5b0</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Name>CASE.ViewSync - Tag</Name>
+    <Assembly>Case.Subs.ViewSync.dll</Assembly>
+    <FullClassName>Case.Subs.ViewSync.Entry.D9B42C3FEA6F4F9E8E1B62E993AA2512</FullClassName>
+    <ClientId>48dda76e-9230-4479-bdc3-0eb1bb5ed5b1</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Name>CASE.ViewSync - Sync</Name>
+    <Assembly>Case.Subs.ViewSync.dll</Assembly>
+    <FullClassName>Case.Subs.ViewSync.Entry.D9B42C3FEA6F4F9E8E1B62E993AA2513</FullClassName>
+    <ClientId>48dda76e-9230-4479-bdc3-0eb1bb5ed5b2</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Name>CASE.ViewSync - Find</Name>
+    <Assembly>Case.Subs.ViewSync.dll</Assembly>
+    <FullClassName>Case.Subs.ViewSync.Entry.D9B42C3FEA6F4F9E8E1B62E993AA2514</FullClassName>
+    <ClientId>48dda76e-9230-4479-bdc3-0eb1bb5ed5b3</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>  
+</RevitAddIns>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.Subs.Renamer</Text>
+    <Description>Case.Subs.Renamer</Description>
+    <Assembly>Case.Subs.Renamer.dll</Assembly>
+    <FullClassName>Case.Subs.Renamer.Entry.DD108DD4BDB24224BFB1848AEEA2582D</FullClassName>
+    <ClientId>777784f8-6faa-41b0-9908-22582967a2d6</ClientId>
+    <VendorId>XXXX</VendorId>
+    <VendorDescription>XXXX</VendorDescription>
+  </AddIn>
+</RevitAddIns>

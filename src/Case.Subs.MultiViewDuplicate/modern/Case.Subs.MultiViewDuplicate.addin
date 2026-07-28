@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.Subs.MultiViewDuplicate</Text>
+    <Assembly>Case.Subs.MultiViewDuplicate.dll</Assembly>
+    <FullClassName>Case.Subs.MultiViewDuplicate.Entry.A330EB8E54CA46B3A28E41DA9E77F9F6</FullClassName>
+    <ClientId>cb992ec6-1e91-4cd4-adf2-b8e4f2b89532</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

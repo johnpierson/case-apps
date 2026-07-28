@@ -1,0 +1,18 @@
+<Project>
+  <!-- Copy built add-in DLL (and optional satellite files) into deploy/{RevitVersion}/ -->
+  <Target Name="CaseCopyToDeploy" AfterTargets="Build" Condition="'$(IsCaseAddin)' == 'true' And '$(DesignTimeBuild)' != 'true'">
+    <MakeDir Directories="$(CaseDeployDir)" Condition="!Exists('$(CaseDeployDir)')" />
+    <ItemGroup>
+      <_CaseDeployFiles Include="$(TargetPath)" />
+      <_CaseDeployFiles Include="$(TargetDir)$(TargetName).pdb" Condition="Exists('$(TargetDir)$(TargetName).pdb')" />
+      <_CaseDeployFiles Include="$(MSBuildProjectDirectory)\**\*.addin" />
+      <_CaseDeployExtra Include="$(TargetDir)*.xlsx" />
+      <_CaseDeployExtra Include="$(TargetDir)*.xls" />
+      <_CaseDeployExtra Include="$(TargetDir)*.png" />
+      <_CaseDeployExtra Include="$(TargetDir)*.dll" Exclude="$(TargetPath)" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_CaseDeployFiles)" DestinationFolder="$(CaseDeployDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_CaseDeployExtra)" DestinationFolder="$(CaseDeployDir)" SkipUnchangedFiles="true" Condition="'@(_CaseDeployExtra)' != ''" />
+    <Message Importance="high" Text="CASE: deployed $(TargetFileName) → $(CaseDeployDir)" />
+  </Target>
+</Project>

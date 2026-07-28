@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.Subs.SharedParameters</Text>
+    <Assembly>Case.Subs.SharedParameters.dll</Assembly>
+    <ClientId>7a0988ca-720c-4e9d-a5db-65a0a3a19313</ClientId>
+    <FullClassName>Case.Subs.SharedParameters.Entry.BC456E773F0B4A04A764DE16ECDA69C9</FullClassName>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsCaseAddin>true</IsCaseAddin>
+    <RootNamespace>Case.ReportGroupsByView</RootNamespace>
+    <AssemblyName>Case.ReportGroupsByView</AssemblyName>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+</Project>

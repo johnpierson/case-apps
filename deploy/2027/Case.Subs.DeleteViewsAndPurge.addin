@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.Subs.DeleteViewsAndPurge</Text>
+    <Assembly>Case.Subs.DeleteViewsAndPurge.dll</Assembly>
+    <ClientId>2ad421a2-b333-45b6-1acb-910e65aa6b9c</ClientId>
+    <FullClassName>Case.Subs.DeleteViewsAndPurge.Entry.B31EA3F20509489BB52A0381E8838AFC</FullClassName>
+    <VendorId>CASE</VendorId>
+    <VendorDescription>Case Design, Inc. http://www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

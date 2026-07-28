@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.HiddenParameterToParameter</Text>
+    <Assembly>Case.HiddenParameterToParameter.dll</Assembly>
+    <ClientId>6c47992e-7ba5-4f86-9238-8df5d2a2777b</ClientId>
+    <FullClassName>Case.HiddenParameterToParameter.Entry.CmdMain</FullClassName>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

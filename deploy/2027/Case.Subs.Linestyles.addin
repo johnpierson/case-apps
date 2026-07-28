@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.Subs.Linestyles</Text>
+    <Assembly>Case.Subs.Linestyles.dll</Assembly>
+    <ClientId>1cea0b1a-e1bd-4aa1-9a71-fc1af44ab217</ClientId>
+    <FullClassName>Case.Subs.Linestyles.Entry.AB0844C654F34178B365D9C83BA84D7D</FullClassName>
+    <VendorId>CASE</VendorId>
+    <VendorDescription>Case Design, Inc., http://www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
