@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsCaseAddin>true</IsCaseAddin>
+    <RootNamespace>Case.Subs.Renamer</RootNamespace>
+    <AssemblyName>Case.Subs.Renamer</AssemblyName>
+    <OutputType>Library</OutputType>
+    <MyType>Windows</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+    <Import Include="System.Data" />
+  </ItemGroup>
+</Project>

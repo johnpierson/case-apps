@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsCaseAddin>true</IsCaseAddin>
+    <RootNamespace>Case.ApplySysOrient</RootNamespace>
+    <AssemblyName>Case.ApplySysOrient</AssemblyName>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+</Project>

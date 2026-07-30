@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>CASE Apps</Name>
+    <Assembly>Case.Apps\Case.AppsRibbon.dll</Assembly>
+    <AddInId>B8E2F5A1-4C3D-4E9F-9A2B-7D6C1E0F8A45</AddInId>
+    <FullClassName>Case.AppsRibbon.Entry.AppMain</FullClassName>
+    <VendorId>CASE</VendorId>
+    <VendorDescription>CASE Apps (open source), https://github.com/rudderdon/case-apps</VendorDescription>
+  </AddIn>
+</RevitAddIns>

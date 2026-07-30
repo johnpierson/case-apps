@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Exceler8 - Export</Text>
+    <Assembly>Case.Subs.Exceler8.dll</Assembly>
+    <FullClassName>Case.Subs.Exceler8.Entry.DE309158ACE741799F90E9210DEEF5F1</FullClassName>
+    <ClientId>48dda76e-9230-4479-bdc3-0eb1cf5ed5ad</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>Exceler8 - Export Schedules</Text>
+    <Assembly>Case.Subs.Exceler8.dll</Assembly>
+    <FullClassName>Case.Subs.Exceler8.Entry.DE309158ACE741799F90E9210DEEF5F3</FullClassName>
+    <ClientId>48dda76e-9230-4479-bdc3-0eb1cf5ed5af</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>Exceler8 - Synchronize</Text>
+    <Assembly>Case.Subs.Exceler8.dll</Assembly>
+    <FullClassName>Case.Subs.Exceler8.Entry.DE309158ACE741799F90E9210DEEF5F2</FullClassName>
+    <ClientId>48dda76e-9230-4479-bdc3-0eb1cf5ed5ae</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>Exceler8 - Smart Import</Text>
+    <Assembly>Case.Subs.Exceler8.dll</Assembly>
+    <FullClassName>Case.Subs.Exceler8.Entry.DE309158ACE741799F90E9210DEEF5F4</FullClassName>
+    <ClientId>48dda76e-9230-4479-bdc3-0eb1cf5ed5be</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command - Case.ParallelWalls</Text>
+    <Assembly>Case.ParallelWalls.dll</Assembly>
+    <FullClassName>Case.ParallelWalls.Entry.CmdMain</FullClassName>
+    <ClientId>F93E0D47-253B-4FC2-A8CB-995B129F668A</ClientId>
+    <VendorId>Case</VendorId>
+  </AddIn>
+</RevitAddIns>

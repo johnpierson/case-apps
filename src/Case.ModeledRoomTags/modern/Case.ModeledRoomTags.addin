@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Application Case.ModeledRoomTags</Text>
+    <Assembly>Case.ModeledRoomTags.dll</Assembly>
+    <ClientId>baefd654-5146-40e3-a189-948d6f0a258c</ClientId>
+    <FullClassName>Case.ModeledRoomTags.Entry.CmdMain</FullClassName>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

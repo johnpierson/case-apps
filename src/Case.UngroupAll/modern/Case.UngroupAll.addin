@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command - Case.UngroupAll</Text>
+    <Assembly>Case.UngroupAll.dll</Assembly>
+    <FullClassName>Case.UngroupAll.Entry.CmdMain</FullClassName>
+    <ClientId>ae631a74-0f8b-4fdf-8a9b-fa7095e0401d</ClientId>
+    <VendorId>Case</VendorId>
+  </AddIn>
+</RevitAddIns>

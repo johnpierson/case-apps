@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.DoorMarkRenumber</Text>
+    <Assembly>Case.DoorMarkRenumber.dll</Assembly>
+    <ClientId>88a0a36d-d7ff-417a-8716-b02e76cbeac9</ClientId>
+    <FullClassName>Case.DoorMarkRenumber.Entry.CmdMain</FullClassName>
+    <VendorId>CASE</VendorId>
+    <VendorDescription>http://www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command XYZ</Text>
+    <Assembly>Case.Subs.Xyz.dll</Assembly>
+    <ClientId>cabce22e-7a58-4992-b0cc-d261d14e00b8</ClientId>
+    <FullClassName>Case.Subs.Xyz.E33AB788BB594985A6A437CEFC70F7CD</FullClassName>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc. http://www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

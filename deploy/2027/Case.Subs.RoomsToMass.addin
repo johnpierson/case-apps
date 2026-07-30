@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.Subs.RoomsToMass</Text>
+    <Assembly>Case.Subs.RoomsToMass.dll</Assembly>
+    <ClientId>1ea393bb-ddba-b49e-bc43-fd41203a0241</ClientId>
+    <FullClassName>Case.Subs.RoomsToMass.Entry.AF73BA45B4B94C7585CB3E425D423F5E</FullClassName>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc. www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

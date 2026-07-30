@@ -16,16 +16,54 @@ While we hope some of our old and new friends continue to actively contribute to
 Huge thanks to [Don Rudder](https://github.com/rudderdon) for developing most of these tools! And let’s not forget [Matthew Nelson](https://github.com/mnelson7982), [Matteo Cominetti](https://github.com/teocomi), and [Kyle Morin](https://github.com/kmorin) for contributing.
 
 ## Installation
-Installation is no longer provided. This repo is to host the source code for research purposes.
 
-## Structure
-The code contains 2015 and 2016 verison of the add-in's projects organized in folders by year and set (as per below), these are respectively part of a 2015 and a 2016 solution.
-Each project corresponds to a single add-in and will have an Entry namespace that contains the classes to initialize each add-in's command.
-The Case.AppsRelease project defines the Revit ribbon layout and buttons, and the add-in manifest is pointing to the Case.AppsRelease.dll.
-The installer is a Inno Setup script, it will take all the files into the deploy/ folder and copy them to the respective Revit Add-in folder.
+### Quick install (dev / smoke test)
+```powershell
+.\build.ps1 -RevitVersions 2026
+.\tools\Install-CaseApps.ps1 -RevitYear 2026
+.\tools\SmokeTest-CaseApps.ps1 -RevitYear 2026 -FromInstall
+```
+Then start **Revit 2026** and look for ribbon tabs **CASE Apps #1** and **CASE Apps #2**.
+
+Uninstall: `.\tools\Install-CaseApps.ps1 -RevitYear 2026 -Uninstall`
+
+### Installer
+Build with Inno Setup from `CaseApps-installer.iss` (components for Revit **2025 / 2026 / 2027**). Files land under `%AppData%\Autodesk\Revit\Addins\<year>\Case.Apps\` with `Case.Apps.addin` beside that folder.
+
+## Modernization (Revit 2025–2027)
+
+Upgraded for **Revit 2025, 2026, and 2027**:
+
+| Year | Target framework | Revit API packages |
+|------|------------------|--------------------|
+| 2025 | `net8.0-windows` | Nice3point.Revit.Api.* |
+| 2026 | `net8.0-windows` | Nice3point.Revit.Api.* |
+| 2027 | `net10.0-windows` | Nice3point.Revit.Api.* |
+
+### Layout
+- **Projects:** `src/<AppName>/modern/` — one SDK-style project per add-in
+- **Solution:** `src/CaseApps.sln`
+- **Shared MSBuild:** `src/Directory.Build.props`, `src/Directory.Build.targets`
+- **Outputs:** `deploy/2025`, `deploy/2026`, `deploy/2027`
 
 ### Building
-Post-built events have been added to each .csproj file to copy the built dlls to the deploy/2015/ or deploy/2016/ folder. **Make sure these folders exist otherwise the projects might not build!** You might want to edit post-build debug events to copy the single project's dlls to the addin folder for testing.
+Requires [.NET SDK 10+](https://dotnet.microsoft.com/download) (rolls forward for net8 builds).
+
+```powershell
+# All years
+.\build.ps1
+
+# One year
+.\build.ps1 -RevitVersions 2026
+
+# Or directly
+dotnet build src\CaseApps.sln -c Release -p:RevitVersion=2026
+```
+
+### Notes
+- VB.NET sources remain VB; tooling and APIs were modernized in place.
+- `Case.Subs.OpenNURBS` is **not** in the modern solution (legacy .NET Framework OpenNURBS wrapper).
+- API updates include `ElementId.Value`, `GroupTypeId` / `ForgeTypeId`, and Revit 2027 `ViewType.PressureLossReport`.
 
 ## Pull Requests
 Feel free to clone/fork the repo and sumbit pull requests to keep improving it!

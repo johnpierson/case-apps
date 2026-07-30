@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Case.ViewTemplates</Text>
+    <Assembly>Case.ViewTemplates.dll</Assembly>
+    <FullClassName>Case.ViewTemplates.Entry.CmdMain</FullClassName>
+    <ClientId>09cd3515-b4f9-4c33-a5f4-a2e2f18cd921</ClientId>
+    <VendorId>CSDR</VendorId>
+    <VendorDescription>Case Design, Inc., www.case-inc.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
